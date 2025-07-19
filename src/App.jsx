@@ -44,8 +44,8 @@ console.log(data);
 
     if (data != undefined && Object.keys(data).length > 0) {
       return (
-        <div className=" max-w-lg min-w-96 text-center mx-auto p-5 mt-7 rounded-2xl relative bg-white shadow-xl ">
-          <div className="flex flex-row gap-2 bg-white">
+        <div className="w-fit max-w-lg lg:min-w-96 text-center md:text-sm text-sm mx-auto p-3 mt-7 rounded-2xl relative border border-neutral-300 shadow-xl ">
+          <div className="flex flex-row gap-2 ">
             <p className="font-bold">Codigo:</p>
             <p>{data.CODIGO}</p>
           </div>
@@ -113,7 +113,7 @@ console.log(data);
     }
 
     return (
-      <div className=" max-w-lg min-w-90 text-center mx-auto p-5 mt-7 rounded-2xl relative bg-white shadow-xl">
+      <div className=" max-w-lg lg:min-w-90 text-center mx-auto p-5 mt-7 rounded-2xl relative bg-white shadow-xl">
         {itemExist == false
           ? `El item de código ${textInput} no existe `
           : "Ingrese un código para buscar"}
@@ -122,13 +122,13 @@ console.log(data);
   };
 
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center ">
       <div className="flex flex-row justify-center gap-4 bg-indigo-500 p-4">
         <input
           type="text"
           value={textInput}
           onChange={handlerInput}
-          className="rounded-full px-4 shadow-md focus:outline-none focus:ring focus:ring-sky-300"
+          className="w-[150px] md:w-[300px] rounded-full px-4 shadow-md focus:outline-none focus:ring focus:ring-sky-300"
         ></input>
         <button
           onClick={handlerButSearch}
