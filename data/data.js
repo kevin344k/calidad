@@ -4896,7 +4896,7 @@ const data = [
         "Prov": ""
     },
     {
-        "CODIGO": "3302105 T",
+        "CODIGO": "3302105T",
         "Tipo": "Acc",
         "Descripción": "Junta de Goma 7mm",
         "Largo": "990",
@@ -4912,7 +4912,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302106 T",
+        "CODIGO": "3302106T",
         "Tipo": "Acc",
         "Descripción": "Junta de Goma 9mm",
         "Largo": "1200",
@@ -4928,7 +4928,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302107 T",
+        "CODIGO": "3302107T",
         "Tipo": "Acc",
         "Descripción": "Arandela 55 gl. B/P ¾\"\"",
         "Largo": "86.74",
@@ -4944,7 +4944,7 @@ const data = [
         "Prov": ""
     },
     {
-        "CODIGO": "3302108 T",
+        "CODIGO": "3302108T",
         "Tipo": "Acc",
         "Descripción": "Arandela 55 gl. B/P 2\"\"",
         "Largo": "193.97",
@@ -5008,7 +5008,7 @@ const data = [
         "Prov": ""
     },
     {
-        "CODIGO": "3302120 T",
+        "CODIGO": "3302120T",
         "Tipo": "Acc",
         "Descripción": "Arandela 5 gl. Barril Espumada",
         "Largo": "480",
@@ -5024,7 +5024,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302133 T",
+        "CODIGO": "3302133T",
         "Tipo": "Acc",
         "Descripción": "Arandela 1 gl. JC Espumada",
         "Largo": "100",
@@ -5040,7 +5040,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302133 T",
+        "CODIGO": "3302133T",
         "Tipo": "Acc",
         "Descripción": "Arandela 1 gl. JC Espumada  ( Modificada )",
         "Largo": "",
@@ -5056,7 +5056,7 @@ const data = [
         "Prov": "V.Abarca-Faximport"
     },
     {
-        "CODIGO": "3302147 T",
+        "CODIGO": "3302147T",
         "Tipo": "Acc",
         "Descripción": "Asa metalicas 10 L.",
         "Largo": "570",
@@ -5072,7 +5072,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302149 T",
+        "CODIGO": "3302149T",
         "Tipo": "Acc",
         "Descripción": "Asas metalicas 5 GL ",
         "Largo": "650",
@@ -5088,7 +5088,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302154 T",
+        "CODIGO": "3302154T",
         "Tipo": "Acc",
         "Descripción": "Arandela 5 y 10 gl. JC Espumada",
         "Largo": "",
@@ -5120,7 +5120,7 @@ const data = [
         "Prov": ""
     },
     {
-        "CODIGO": "3302158 T",
+        "CODIGO": "3302158T",
         "Tipo": "Acc",
         "Descripción": "Arandela Lainers",
         "Largo": "",
@@ -5152,7 +5152,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302162 T",
+        "CODIGO": "3302162T",
         "Tipo": "Acc",
         "Descripción": "Arandela 10 lt. Espumada",
         "Largo": "770±5",
@@ -5200,7 +5200,7 @@ const data = [
         "Prov": ""
     },
     {
-        "CODIGO": "3302166 T",
+        "CODIGO": "3302166T",
         "Tipo": "Acc",
         "Descripción": "Arandela 5 gl. S/B Espumada",
         "Largo": "920",
@@ -5216,7 +5216,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302167 T",
+        "CODIGO": "3302167T",
         "Tipo": "Acc",
         "Descripción": "Arandela 5 gl. Clasico Espumada",
         "Largo": "945±5",
@@ -5232,7 +5232,7 @@ const data = [
         "Prov": "Faximport"
     },
     {
-        "CODIGO": "3302168 T",
+        "CODIGO": "3302168T",
         "Tipo": "Acc",
         "Descripción": "Arandela 5 gl. S/B PVC",
         "Largo": "915±5",
@@ -5248,7 +5248,7 @@ const data = [
         "Prov": ""
     },
     {
-        "CODIGO": "3302169 T",
+        "CODIGO": "3302169T",
         "Tipo": "Acc",
         "Descripción": "Arandela 5 gl. Clasico PVC",
         "Largo": "945±5",
@@ -5264,7 +5264,7 @@ const data = [
         "Prov": ""
     },
     {
-        "CODIGO": "3302171 T",
+        "CODIGO": "3302171T",
         "Tipo": "Acc",
         "Descripción": "Arandela 10 L. PVC",
         "Largo": "765±5",
