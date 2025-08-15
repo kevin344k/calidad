@@ -59,9 +59,9 @@ function App() {
         </div>
       </nav>
             {/* Lista de sugerencias */}
-  <div className="absolute top-[80px] z-30">
+  <div className="absolute top-[80px] z-30 w-full">
           {suggestions.length > 0 && (
-          <ul className=" w-[95%] mx-auto bg-white shadow-md rounded-lg overflow-hidden z-50 divide-y">
+          <ul className=" w-[95%] md:max-w-[450px] mx-auto bg-white shadow-md rounded-lg overflow-hidden z-50 divide-y">
             {suggestions.map((item, idx) => (
               <li
                 key={idx}
@@ -75,7 +75,7 @@ function App() {
         )}
   </div>
 
-    <main className="flex  flex-1 items-center justify-center">
+    <main className="flex  flex-1 items-center justify-center bg-neutral-50">
         {/* Resultado */}
       <Card data={dataFound}  />
     </main>
