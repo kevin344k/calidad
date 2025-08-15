@@ -1,4 +1,4 @@
-const data = [
+[
     {
         "CODIGO": "3201103A",
         "Tipo": "Rollo",
@@ -5378,4 +5378,3 @@ const data = [
 ]
 
 
-export default data
