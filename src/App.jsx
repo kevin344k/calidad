@@ -12,7 +12,7 @@ function App() {
 
  const handleInputChange = (e) => {
     const rawValue = e.target.value;
-    const filteredValue = rawValue.replace(/[^a-zA-Z0-9\s]/g, "").toUpperCase();
+    const filteredValue = rawValue.toUpperCase();
     setTextInput(filteredValue);
 
     if (!filteredValue.trim()) {
@@ -28,7 +28,7 @@ function App() {
         item.Descripción.toUpperCase().includes(filteredValue)
     );
 
-    setSuggestions(matches.slice(0, 5)); // mostrar máx 5
+    setSuggestions(matches.slice(0, 8)); // mostrar máx 5
   };
 
   const handleSuggestionClick = (item) => {
@@ -59,7 +59,7 @@ function App() {
         </div>
       </nav>
             {/* Lista de sugerencias */}
-  <div className="absolute top-[80px]">
+  <div className="absolute top-[80px] z-30">
           {suggestions.length > 0 && (
           <ul className=" w-[95%] mx-auto bg-white shadow-md rounded-lg overflow-hidden z-50 divide-y">
             {suggestions.map((item, idx) => (
