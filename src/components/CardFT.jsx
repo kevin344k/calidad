@@ -10,7 +10,7 @@ export default function Card({ data,onClose }) {
     };
 
     return (
-      <div className=" max-w-[310px]  h-fit bg-white  md:max-w-[420px] lg:min-w-96 text-center md:text-sm text-sm mx-auto  rounded-2xl relative  shadow-xl">
+      <div className=" max-w-[290px]  h-fit bg-white  md:max-w-[420px] lg:min-w-96 text-center md:text-sm text-sm mx-auto  rounded-2xl relative  shadow-xl">
         <button
           onClick={onClose}
           className="absolute -top-5 -right-2 w-10 h-10 flex items-center justify-center 

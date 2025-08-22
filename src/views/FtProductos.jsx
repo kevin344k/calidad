@@ -134,7 +134,7 @@ const [isOpen,setIsOpen]=useState(false)
                   {visibleProductos.map((item, idx) => (
                     <li
                       key={idx}
-                      className="p-3 bg-gray-50 border rounded-md flex gap-2 "
+                      className="p-3 bg-gray-50 border rounded-md flex gap-1 "
                       onClick={()=>setDataFound(item)
                       }
                     >
