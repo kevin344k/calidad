@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function Card({ data }) {
+  console.log(data);
+  
   function Field({ label, value, vertical }) {
     return (
       <div className={`flex ${vertical ? "flex-col" : "flex-row"} gap-2`}>
@@ -17,78 +19,40 @@ export default function Card({ data }) {
     };
 
     return (
-      <div className=" max-w-[310px]  h-full md:max-w-[420px] lg:min-w-96 text-center md:text-sm text-sm mx-auto overflow-hidden  rounded-2xl relative border border-neutral-300 shadow-xl">
+      <div className=" max-w-[310px]  h-full md:max-w-[420px] lg:min-w-96 text-center md:text-sm text-sm mx-auto overflow-hidden  rounded-2xl relative border border-neutral-200 shadow-xl">
         <div className="w-full bg-[radial-gradient(circle,_#2D5847,_#499371)] p-5">
-          <img className="mx-auto" src={data.URL} alt="" />
-        </div>
-
-        <div className="p-3 py-8">
           {/* Código y descripción */}
           <div className="flex flex-row gap-2">
-            <p className="font-bold">Código:</p>
-            <p>{data.ITEM}</p>
+            <p className="text-white">{data.Ficha}</p>
           </div>
-          <div className="flex flex-row gap-2">
-            <p className="font-bold">Descripción:</p>
-            <p>{data.DESCRIPCION_DEL_PRODUCTO}</p>
+          <div className="flex flex-row gap-2 py-4">
+            <p className="font-bold text-white">{data.Producto}</p>
           </div>
+        </div>
 
+        <div className="p-3 py-4 flex items-center justify-center flex-col">
           {/* Medidas */}
-          <div className="text-center">
-            <p className="font-bold py-1 mb-2 border-b-2">Medidas</p>
-            <div className="grid grid-cols-2 gap-2 mb-7">
-              <Field
-                label="Peso(g)"
-                value={
-                  formatNumber(data?.PESO_STANDARD_g) !== null &&
-                  formatNumber(data?.TOLERANCIA_PROMEDIO_PESO_g) !== null
-                    ? `${formatNumber(data.PESO_STANDARD_g)} ± ${formatNumber(
-                        data.TOLERANCIA_PROMEDIO_PESO_g
-                      )}`
-                    : ""
-                }
-              />
-
-              <Field
-                label="Ø externo(mm)"
-                value={
-                  formatNumber(data?.DIAMETRO_EXTERNO_mm) !== null &&
-                  formatNumber(data?.TOLERANCIA_PROMEDIO_D_EXT_mm) !== null
-                    ? `${formatNumber(
-                        data.DIAMETRO_EXTERNO_mm
-                      )} ± ${formatNumber(data.TOLERANCIA_PROMEDIO_D_EXT_mm)}`
-                    : "n/a"
-                }
-              />
-              <Field
-                label="Ø interno(mm)"
-                value={
-                  formatNumber(data?.DIAMETRO_INTERNO_mm) !== null &&
-                  formatNumber(data?.TOLERANCIA_PROMEDIO_D_INT_mm) !== null
-                    ? `${formatNumber(
-                        data.DIAMETRO_INTERNO_mm
-                      )} ± ${formatNumber(data.TOLERANCIA_PROMEDIO_D_INT_mm)}`
-                    : "n/a"
-                }
-              />
-              <Field
-                label="Altura(mm)"
-                value={
-                  formatNumber(data?.ALTURA_mm) !== null &&
-                  formatNumber(data?.TOLERANCIA_PROMEDIO_ALTURA_mm) !== null
-                    ? `${formatNumber(data.ALTURA_mm)} ± ${formatNumber(
-                        data.TOLERANCIA_PROMEDIO_ALTURA_mm
-                      )}`
-                    : "n/a"
-                }
-              />
+          <div className="text-center px-4 w-full min-w-[300px]">
+            <p className="font-bold py-1 mb-2 ">Medidas</p>
+            <ul className="divide-y text-left">
+        {Object.entries(data).slice(2,-1).map(([key, value]) => (
+          <li key={key} className="py-2">
+            <span className="font-semibold">{key}: </span>
+            <span>{value}</span>
+          </li>
+        ))}
+      </ul>
+          </div>
+          {/* Imagen */}
+          <div className=" ">
+            <div className="h-40 w-34 p-1 bg-white shadow-md">
+              Imagen de producto
             </div>
           </div>
-
-          {/* Etiquetas */}
-          <div className="border border-red-400 bg-red-400 w-full px-5 py-2 absolute bottom-0 right-0 rounded-br-2xl rounded-bl-2xl">
-            <p className="text-white font-semibold">{data.PROCESO}</p>
-          </div>
+        </div>
+        {/* Etiquetas */}
+        <div className="border border-red-400 bg-red-400 w-full px-5 py-2  bottom-0 right-0 rounded-br-2xl rounded-bl-2xl">
+          <p className="text-white font-semibold">{data.PROCESO}</p>
         </div>
       </div>
     );
