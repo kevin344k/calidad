@@ -5,7 +5,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className=" flex min-h-screen gap-4 justify-center items-center bg-gradient-to-tr from-indigo-600  to-purple-500 lg:h-screen">
+    <div className=" flex  h-full gap-4 justify-center items-center bg-gradient-to-tr from-indigo-600  to-purple-500 lg:h-screen">
       <div className="flex flex-col w-[80%] text-center gap-4 justify-center items-center lg:flex-row">
         <div
           className="p-5 w-[270px] h-[270px] rounded-lg cursor-pointer"
