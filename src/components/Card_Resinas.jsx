@@ -35,11 +35,11 @@ export default function Card_Resinas({ data }) {
               <p className="font-bold">Calificacion</p>
               <p>{data.Calificacion}</p>
             </div>
-               <div className=" gap-2 bg-neutral-200 rounded-md py-2">
+               <div className=" gap-2  rounded-md py-2">
               <p className="font-bold">MFR (g/10min)</p>
               <p>{data.mfr}</p>
             </div>
-             <div className=" gap-2 bg-neutral-200 rounded-md py-2">
+             <div className=" gap-2  rounded-md py-2">
               <p className="font-bold">test MFR</p>
               <p>{data.Test_MFR}</p>
             </div>
